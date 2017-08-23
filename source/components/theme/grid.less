@@ -1,0 +1,81 @@
+.cell > *,
+.grid_gutter > *,
+.grid > * {
+  // line-height: 0;
+  text-align: center;
+}
+
+
+.grid_block,
+.grid_gutter,
+.grid {
+  position: relative;
+  display: block;
+  margin: 0; /* 1 */
+  padding: 0; /* 1 */
+  text-align: left; /* 1 */
+  font-size: 0; /* 2 */
+}
+.grid_gutter {
+  margin: 0 calc(-.5 * 1rem);
+}
+.grid_gutter > .cell {
+  padding: 0 calc(.5 * 1rem);
+}
+
+
+.cell {
+  position: relative;
+  display: inline-block;
+  width: 100%; /* 1 */
+  margin: 0;
+  padding: 0;
+  vertical-align: top;
+  font-size: 1rem; /* 2 */
+  overflow: hidden;
+}
+.cell_1_of_2 {
+  width: 50%;
+}
+.cell_1_of_3 {
+  width: 33.33333333333333333333%;
+}
+.cell_1_of_4 {
+  width: 25%;
+}
+.cell_1_of_5 {
+  width: 20%;
+}
+.cell_1_of_6 {
+  width: 16.66666666666666666666%;
+}
+
+
+.block > * {
+  display: inline-block;
+  margin-right: 1em;
+  vertical-align: top;
+  font-size: 1rem;
+}
+.blocks_2 > * {
+  width: calc(50% - .5em);
+}
+.blocks_3 > * {
+  width: calc(33.3333333333333333% - .6666666666666666em);
+}
+.blocks_4 > * {
+  width: calc(25% - .75em);
+}
+.blocks_5 > * {
+  width: calc(20% - .8em);
+}
+.blocks_6 > * {
+  width: calc(16.6666666666666666% - .8444444444444444em);
+}
+.blocks_6 > *:nth-child(6n),
+.blocks_5 > *:nth-child(5n),
+.blocks_4 > *:nth-child(4n),
+.blocks_3 > *:nth-child(3n),
+.blocks_2 > *:nth-child(2n) {
+  margin-right: 0;
+}

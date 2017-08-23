@@ -1,0 +1,51 @@
+@import "~style/variables";
+
+
+.default {
+  position: relative;
+  display: inline-block;
+  min-width: 8rem;
+  line-height: 3rem;
+  padding: 0 1.5rem;
+  vertical-align: top;
+  font-size: 1.4rem;
+  text-decoration: none;
+  text-align: center;
+  user-select: none;
+  cursor: pointer;
+  background-color: transparent;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #3d70b2;
+  color: #3d70b2;
+}
+.default:hover {
+  background-color: #5596e6;
+  color: #ffffff;
+}
+.default:active {
+  background-color: #0078d7;
+  color: #ffffff;
+}
+
+
+.primary {
+  background-color: #0078d7;
+  color: #ffffff;
+}
+.primary:hover {
+  background-color: #005a9e;
+  color: #ffffff;
+}
+.primary:active {
+  background-color: #0078d7;
+  color: #ffffff;
+}
+
+
+.disabled {
+  opacity: .5;
+  pointer-events: none;
+  cursor: default;
+  outline: transparent;
+}
